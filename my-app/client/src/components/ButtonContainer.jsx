@@ -1,7 +1,7 @@
 import React from "react";
 import HotelButton from "./HotelButton";
 
-export default function ButtonContainer({}) {
+export default function ButtonContainer() {
   return (
     <section>
       <HotelButton />
