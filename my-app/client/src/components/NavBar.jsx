@@ -13,6 +13,9 @@ export default function NavBar() {
         <li>
           <Link to="/AboutUsPage">About us Page</Link>
         </li>
+        <li>
+          <Link to ="/QuestionPage">Question Page</Link>
+        </li>
       </ul>
     </nav>
   );
