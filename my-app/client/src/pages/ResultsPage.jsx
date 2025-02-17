@@ -1,21 +1,7 @@
-// import React from "react";
 
-
-// // // useLocation():
-// // This hook is used to retrieve the state passed from the previous page (in this case, the storeResponse array containing the user’s answers).
-// // The state?.responses retrieves the responses passed via React Router’s navigation.
-
-// This hook is used to retrieve the state passed from the previous page
-// export default function ResultsPage() {
-//   return <p>Here are your results!</p>;
-//   //So, you want to pass the user's responses to the results page to process them and display the relevant output.
-// //   Accept the user’s responses.
-// // Process the data (filter or rank hotels).
-// // Display the results based on the filtered or ranked hotels.
-
-// }
 import React from "react";
 import { useLocation } from "react-router-dom";
+import styles from "./QuestionPage.module.css"; 
 
 // Example real hotels data in the UK (with location and website links)
 const hotels = [

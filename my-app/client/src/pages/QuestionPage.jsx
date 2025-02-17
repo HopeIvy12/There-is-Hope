@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "./QuestionPage.module.css"; // Import the CSS module
+
 // QuestionPage.js	Manages question flow, stores answers, handles navigation
 // ✅ Holds state for current question & answer
-// Controls when to move to the next question
-
+// ✅ Controls when to move to the next question
 // ✅ Storing questions in an array.
 // ✅ Keeping track of the current question index.
 // ✅ Storing user responses (yes/no).
@@ -36,7 +37,7 @@ export default function QuestionPage() {
   //it needs to track where i am to move through
   //We worry about three things:
   //how to move through the question
-  //we are storing the reponse
+  //we are storing the response
   //we need to keep track of what question we are on
   //states
 
@@ -52,7 +53,6 @@ export default function QuestionPage() {
   // It takes the existing responses (responses) and adds a new object { questionId, answer }.
   // questionId comes from the current question at questions[questionIndex].id.
   // Moves to the next question by increasing questionIndex by 1.
-
   //I need to update what is at index [questionIdex] with the question updated with the answer
   //youre state will be in the state as all the qiestions will be answered at the correct index
   //two aarrays with empty questiosn unaswered, 2nd array that is empty and you push at the end
@@ -93,22 +93,24 @@ export default function QuestionPage() {
     setQuestionIndex(questionIndex + 1);
     // ensures the next question is displayed.
     //this take the answer and storees it in a new object
-
   }
 
- function HandleNavigation() {
-  ResultsPage("/ResultsPage", { state: { responses: storeResponse } });
-}
+  function HandleNavigation() {
+    ResultsPage("/ResultsPage", { state: { responses: storeResponse } });
+  }
   return (
-    <div>
+    <div className={styles.container}>
       {questionIndex < questions.length ? (
         <>
-          <p>{questions[questionIndex].question}</p>
-          <button onClick={() => HandleQuestions("Yes")}>Yes</button>
-          <button onClick={() => HandleQuestions("No")}>No</button>
-        </>
+          <p className={styles.question}>{questions[questionIndex].question}</p>
+          <div className={styles.buttonContainer}>
+          <button className={styles.button} onClick={() => HandleQuestions("Yes")}>Yes</button>
+          <button className={styles.button} onClick={() => HandleQuestions("No")}>No</button>
+        </div></>
       ) : (
-        <button onClick={HandleNavigation}>Find your Results</button>
+        <button className={styles.button} onClick={HandleNavigation}>
+          Find your Results
+        </button>
       )}
     </div>
   );

@@ -1,0 +1,44 @@
+/* When the screen width is 600px or smaller (mobile devices) */
+@media (max-width: 600px) {
+    .container {
+      width: 100%; /* Full width */
+      font-size: 16px; /* Smaller font for mobile */
+    }
+  }
+  /* @keyframes is used in CSS to create animations by defining how an element should
+  change at different points in time. You can use it to animate properties like position, color, opacity, etc. */
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F3F4F6; /* Soft Grey */
+  color: #1E3A8A; /* Deep Blue for text */
+  }
+  
+  .question {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .buttonContainer{
+
+  }
+
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  };
+  
