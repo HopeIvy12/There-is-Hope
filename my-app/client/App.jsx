@@ -30,7 +30,7 @@
 //   process.env.NEXT_PUBLIC_SUPABASE_URL,  // Use the environment variable
 //   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY  // Use the environment variable
 // );
-// export default supabase; 
+// export default supabase;
 
 // export default function App() {
 //   const [session, setSession] = useState(null);
@@ -63,10 +63,8 @@
 //   );
 // }
 
-
-
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; // Add Route and Switch for routing
+import { BrowserRouter as Router } from "react-router-dom"; // Add Route and Switch for routing
 import { createClient } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
@@ -77,8 +75,8 @@ import ProfilePage from "./src/pages/Profile";
 
 // Create a supabase client using environment variables
 const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,  // Use the environment variable
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY  // Use the environment variable
+  process.env.REACT_APP_SUPABASE_URL, // Use the environment variable
+  process.env.REACT_APP_SUPABASE_ANON_KEY
 );
 
 function App() {
@@ -110,19 +108,11 @@ function App() {
     <Router>
       <>
         <NavBar />
-        <Switch>
-          {/* You can add routes here */}
-          <Route exact path="/" component={PageRoutes} />
-          <Route path="/profile" component={ProfilePage} />
-        </Switch>
+        <ProfilePage />
+        <PageRoutes />
       </>
     </Router>
   );
 }
 
 export default App; // Only export App component
-
-
-
-
-
