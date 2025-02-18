@@ -74,9 +74,14 @@ import PageRoutes from "./logic/PageRoutes";
 import ProfilePage from "./src/pages/Profile";
 
 // Create a supabase client using environment variables
+// const supabase = createClient(
+//   process.env.REACT_APP_SUPABASE_URL,
+//   process.env.REACT_APP_SUPABASE_ANON_KEY 
+// );
+
 const supabase = createClient(
-  process.env.REACT_APP_SUPABASE_URL,
-  process.env.REACT_APP_SUPABASE_ANON_KEY 
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_ANON_KEY 
 );
 
 function App() {
