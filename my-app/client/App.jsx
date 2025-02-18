@@ -21,10 +21,14 @@ import { ThemeSupa } from "@supabase/auth-ui-shared";
 import "./style/App.css";
 import NavBar from "./src/components/NavBar";
 import PageRoutes from "./logic/PageRoutes";
+import ProfilePage from "./src/pages/Profile";
 
-const supabase = createClient(
-  'https://zqidjnwchewjwimzeobz.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpxaWRqbndjaGV3andpbXplb2J6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk4Nzk3NzQsImV4cCI6MjA1NTQ1NTc3NH0.2IVsIPCqFx_asISWuIn5pqHZUT3r8aO6qcom7Nsw6ko'
+  // "https://zqidjnwchewjwimzeobz.supabase.co",
+  // "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpxaWRqbndjaGV3andpbXplb2J6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk4Nzk3NzQsImV4cCI6MjA1NTQ1NTc3NH0.2IVsIPCqFx_asISWuIn5pqHZUT3r8aO6qcom7Nsw6ko"
+
+  const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,  // Use the environment variable
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY  // Use the environment variable
 );
 
 export default function App() {
@@ -51,8 +55,17 @@ export default function App() {
     <Router>
       <>
         <NavBar />
+        <ProfilePage />
         <PageRoutes />
       </>
     </Router>
   );
 }
+
+
+
+
+
+
+
+
