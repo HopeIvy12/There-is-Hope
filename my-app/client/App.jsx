@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom"; // Add Route and Swi
 import { createClient } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
-import "./style/App.css";
+// import "./style/App.css";
 import NavBar from "./src/components/NavBar";
 import PageRoutes from "./logic/PageRoutes";
 
