@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Space Mono", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf2ea; /* Soft Warm Yellow */
+  color: #0081A7; /* Deep Blue */
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: #0081A7; /* Deep Blue */
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Button */
+.button {
+  background-color: #F07167; /* Bold Coral Red */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #FED9B7; /* Soft Peach */
+  color: #0081A7; /* Deep Blue for contrast */
+}
+
+/* Navigation Bar */
+.navBar {
+  display: flex;
+  justify-content: flex-start; /* Distribute the items evenly */
+  background-color: #00AFB9; /* Vibrant Aqua */
+  padding: 20px;
+text-align: left;
+}
+
+.navBar ul {
+  display: flex; /* Make the list items appear in a row */
+  list-style: none; /* Remove the bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0;
+ /* Remove margin */
+}
+
+.navBar li {
+  margin: 0 15px; /* Space out the items evenly */
+}
+
+.navBar a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text */
+  font-size: 18px; /* Adjust the font size */
+  font-weight: bold; /* Bold text */
+}
+
+.navBar a:hover {
+  color: #F07167; /* Bold Pink on hover */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 28px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+}

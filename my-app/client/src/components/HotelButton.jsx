@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "../pages/HomePage.module.css";
+import styles from "../pages/HomePage/HomePage.module.css";
 
 export default function HotelButton() {
   const navigate = useNavigate();

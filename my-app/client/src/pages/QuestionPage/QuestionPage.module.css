@@ -1,0 +1,65 @@
+/* When the screen width is 600px or smaller (mobile devices) */
+@media (max-width: 600px) {
+  .container {
+      width: 100%; /* Full width */
+      font-size: 16px; /* Smaller font for mobile */
+  }
+
+  .button {
+      padding: 12px 30px; /* Larger button size for mobile */
+      font-size: 18px; /* Larger text for buttons */
+  }
+}
+
+/* Global styles */
+* {
+  font-family: "Space Mono", serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:  #faf2ea; /* Soft Yellow */
+  color: #0081A7; /* Bold Cyan for text */
+}
+
+.question {
+  font-size: 24px; /* Larger font size for questions */
+  margin-bottom: 20px;
+  color: #00AFB9; /* Light Turquoise for question text */
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 15px 40px; /* Large, spacious button size */
+  margin: 10px;
+  font-size: 20px; /* Bold, large text */
+  border: none;
+  cursor: pointer;
+  background-color: #F07167; /* Bold Pink */
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.button:hover {
+  background-color: #F07167; /* Slightly darker pink */
+  transform: scale(1.05); /* Button grows slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow for hover effect */
+}
+
+.button:focus {
+  outline: none;
+  border: 2px solid #00AFB9; /* Highlight with turquoise on focus */
+}
+

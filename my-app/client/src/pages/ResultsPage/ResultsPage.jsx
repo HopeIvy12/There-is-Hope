@@ -1,7 +1,7 @@
 
 import React from "react";
 import { useLocation } from "react-router-dom";
-import styles from "./QuestionPage.module.css"; 
+// import styles from "./QuestionPage.module.css"; 
 
 // Example real hotels data in the UK (with location and website links)
 const hotels = [

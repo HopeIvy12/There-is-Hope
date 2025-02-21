@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-import styles from "../pages/HomePage.module.css";
+import styles from "../pages/HomePage/HomePage.module.css";
 
 export default function Header() {
   return (
