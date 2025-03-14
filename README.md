@@ -18,3 +18,6 @@ Built with accessibility in mind, the app utilizes a clear, question-based forma
 ## **Future Plans**  
 - The app will eventually grow into a **community-driven platform**, where users can contribute and recommend accessible hotels. Hotels are recommended by the community, for the community.
 - Long-term vision: **A hub for a variety of information and support** for the disabled community.
+
+## **Contributors**  
+- [@HopeIvy12](https://github.com/HopeIvy12) – Developer
