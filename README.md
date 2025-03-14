@@ -15,6 +15,10 @@ Built with accessibility in mind, the app utilizes a clear, question-based forma
 - **Vercel** (for Deployment)  
 - **Figma** (for Wireframing)
 
+## **Link to Live Project**  
+You can try out There Is Hope here:  
+[There is Hope](https://there-is-hope.vercel.app/)
+
 ## **Future Plans**  
 - The app will eventually grow into a **community-driven platform**, where users can contribute and recommend accessible hotels. Hotels are recommended by the community, for the community.
 - Long-term vision: **A hub for a variety of information and support** for the disabled community.
